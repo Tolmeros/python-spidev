@@ -174,7 +174,7 @@ SpiDev_writebytes(SpiDevObject *self, PyObject *args)
 
 	if (status != len) {
 		perror("short write ");
-		fprintf(stderr, "short write %d %d", status, len);
+		printf("short write %d %d", status, len);
 		return NULL;
 	}
 
